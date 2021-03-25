@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import React from 'react';
+import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 
 export const Search = ({ word, setWord, handleSubmit }) => {
   return (
@@ -12,13 +12,15 @@ export const Search = ({ word, setWord, handleSubmit }) => {
                 <Form.Control
                   type="text"
                   value={word}
-                  onChange={(e)=>setWord(e.target.value)}
+                  onChange={(e) => setWord(e.target.value)}
                   placeholder="Search for new image..."
-
                 />
               </Col>
               <Col>
-                <Button variant="primary" type="submit"> Search </Button> 
+                <Button variant="primary" type="submit">
+                  {' '}
+                  Search{' '}
+                </Button>
               </Col>
             </Form.Row>
           </Form>
